@@ -1,0 +1,9 @@
+#!/bin/bash
+
+while [ 1 ]
+do
+	t=$(($RANDOM%20))
+	espeak -s 250 hello
+	espeak -s 250 world
+	sleep $t
+done
