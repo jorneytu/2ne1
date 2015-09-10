@@ -44,4 +44,8 @@ void XLIST_DEL(struct xlist *entry)
 	xlist_del(entry->prev, entry->next);
 }
 
+int XLIST_IS_EMPTY(struct xlist *entry)
+{
+	return entry->prev == entry->next ? 1 : 0;
+}
 #endif /* _XFUN_ */
